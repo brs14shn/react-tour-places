@@ -1,0 +1,32 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+.ul-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+    color: white;
+    padding: 2rem;
+
+    li {
+      
+      font-family: 'Shadows Into Light', cursive;
+      padding: 1rem;
+      border-radius: 9px;
+      transition: all 0.2s;
+      cursor: pointer;
+      font-size: 1.3rem;
+     
+     &:hover{
+            background-color: $The-Biggest-Lie-2-hex;
+            opacity: 0.5;
+            
+     }
+    }
+
+    
+}

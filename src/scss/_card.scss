@@ -1,0 +1,68 @@
+@import "./variables", "./reset";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0.5rem 1rem;
+        background-color: pink;
+        height: calc(100vh - 122px);
+        overflow: auto;
+}
+.card-container {
+
+    position: relative;
+    padding: 1rem;
+    background-color: #022333;
+    width:30% ;
+    max-width: 25rem ;
+    min-width: 25rem;
+    height:25rem ;
+    border-radius: 9px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+  
+   
+
+    h1 {
+        padding: 0.8rem;
+        color: white;
+    }
+
+    img {
+        width: 95%;
+        height: 15rem;
+        margin: 1rem;
+        border-radius: 10px;
+
+        &:hover~p {
+            position: absolute;
+            bottom: 56px;
+            left: 46px;
+            display: block;
+            width: 20rem;
+            height: 5rem;
+            overflow: hidden;
+            border-radius: 10px;
+            padding:  0.9rem 0;
+            font-size: .7rem;
+            background-color: black;
+            opacity: .7;
+            text-align: center;
+        }
+
+        &:hover {
+            filter: grayscale(100%);
+        }
+    }
+
+    p {
+        padding: 0.3rem;
+        background-color: $The-Biggest-Lie-5-hex ;
+        color: white;
+        display: none;
+        transition: all 2s;
+    }
+}
